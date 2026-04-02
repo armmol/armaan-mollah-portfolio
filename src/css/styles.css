@@ -145,17 +145,41 @@ img { display: block; max-width: 100%; }
 }
 
 .nav-logo {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--green), var(--purple));
-    border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 14px;
-    color: #fff;
-    letter-spacing: 1px;
+    gap: 8px;
+    text-decoration: none;
+    padding: 6px 4px;
+}
+
+.nav-android {
+    width: 26px;
+    height: 26px;
+    color: var(--green);
+    flex-shrink: 0;
+    animation: androidBob 2.5s ease-in-out infinite;
+}
+
+@keyframes androidBob {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-4px); }
+}
+
+.nav-logo-text {
+    font-size: 15px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--green), #a78bfa, var(--green));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes gradientShift {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
 }
 
 .nav-links {
