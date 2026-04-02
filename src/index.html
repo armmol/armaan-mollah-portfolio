@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armaan Mollah – Android Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">AM</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#offer">What I Offer</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-burger" id="burger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#offer" class="mobile-link">What I Offer</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="android-icon">&#xe800;</span>
+                Android Developer
+            </div>
+            <h1 class="hero-name">Armaan Mollah</h1>
+            <p class="hero-tagline">Building polished Android experiences with Kotlin &amp; Jetpack Compose</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Apps Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-plus">k+</span>
+                    <span class="stat-label">Users Reached</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-phone">
+            <div class="phone-frame">
+                <div class="phone-screen">
+                    <div class="app-ui">
+                        <div class="app-bar">
+                            <div class="app-bar-title">MyApp</div>
+                            <div class="app-bar-icon">&#9881;</div>
+                        </div>
+                        <div class="app-card"></div>
+                        <div class="app-card app-card--sm"></div>
+                        <div class="app-card app-card--sm"></div>
+                        <div class="app-row">
+                            <div class="app-chip">Kotlin</div>
+                            <div class="app-chip">Compose</div>
+                            <div class="app-chip">MVVM</div>
+                        </div>
+                        <div class="app-fab">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">Passionate about crafting <span class="highlight">great Android apps</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm an Android developer who loves turning ideas into smooth, intuitive mobile experiences. I care deeply about clean architecture, performance, and user experience — writing code that's as maintainable as it is effective.</p>
+                    <p>From solo side projects to collaborative team builds, I've shipped apps that people actually use. My stack is modern: Kotlin-first, Jetpack Compose for UI, and solid architectural patterns that keep codebases sane as they grow.</p>
+                    <p>When I'm not building apps, I'm exploring the Android ecosystem, keeping up with Google I/O announcements, and contributing to open-source.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="about-card-icon">&#128241;</div>
+                        <div class="about-card-text">
+                            <strong>Android Native</strong>
+                            <span>Kotlin &amp; Java, API level 21+</span>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">&#127775;</div>
+                        <div class="about-card-text">
+                            <strong>Clean Architecture</strong>
+                            <span>MVVM, Clean, MVI patterns</span>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">&#128640;</div>
+                        <div class="about-card-text">
+                            <strong>Play Store Ready</strong>
+                            <span>Published &amp; production-tested apps</span>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">&#128101;</div>
+                        <div class="about-card-text">
+                            <strong>Team Player</strong>
+                            <span>Agile, code reviews, collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--dark" id="skills">
+        <div class="container">
+            <div class="section-label">Technical Skills</div>
+            <h2 class="section-title">What I work with</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Kotlin</span><span>95%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Java</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>XML / Layouts</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Android &amp; Jetpack</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Jetpack Compose</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Room / SQLite</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Navigation Component</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Architecture &amp; Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>MVVM / MVI</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Retrofit / OkHttp</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Hilt / Dagger DI</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Backend &amp; Services</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Firebase</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>REST APIs</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Git &amp; GitHub</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">Coroutines</span>
+                <span class="tag">Flow</span>
+                <span class="tag">LiveData</span>
+                <span class="tag">ViewModel</span>
+                <span class="tag">WorkManager</span>
+                <span class="tag">DataStore</span>
+                <span class="tag">Glide / Coil</span>
+                <span class="tag">Gradle</span>
+                <span class="tag">Espresso</span>
+                <span class="tag">JUnit</span>
+                <span class="tag">Android Studio</span>
+                <span class="tag">Play Console</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-label">Experience</div>
+            <h2 class="section-title">My journey so far</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">2023 – Present</span>
+                            <span class="timeline-badge">Current</span>
+                        </div>
+                        <h3 class="timeline-role">Android Developer</h3>
+                        <p class="timeline-company">Freelance / Self-employed</p>
+                        <p class="timeline-desc">Building end-to-end Android applications for clients — from wireframe to Play Store. Specialising in Kotlin, Jetpack Compose, and clean architecture patterns.</p>
+                        <div class="timeline-tags">
+                            <span>Kotlin</span><span>Compose</span><span>Firebase</span><span>MVVM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">2022 – 2023</span>
+                        </div>
+                        <h3 class="timeline-role">Junior Android Developer</h3>
+                        <p class="timeline-company">Mobile App Studio</p>
+                        <p class="timeline-desc">Collaborated on a team of 4 developers shipping consumer-facing Android apps. Led migration of legacy XML UI to Jetpack Compose on two major features, reducing UI code by ~40%.</p>
+                        <div class="timeline-tags">
+                            <span>Java</span><span>Kotlin</span><span>Retrofit</span><span>Room</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">2021 – 2022</span>
+                        </div>
+                        <h3 class="timeline-role">Android Intern</h3>
+                        <p class="timeline-company">Tech Startup</p>
+                        <p class="timeline-desc">First professional Android role. Built features, fixed bugs, wrote unit tests, and learned production-grade development workflows in an Agile environment.</p>
+                        <div class="timeline-tags">
+                            <span>Java</span><span>Android SDK</span><span>Git</span><span>Agile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--dark" id="projects">
+        <div class="container">
+            <div class="section-label">Projects</div>
+            <h2 class="section-title">Things I've built</h2>
+            <div class="projects-grid">
+                <div class="project-card project-card--featured">
+                    <div class="project-header">
+                        <div class="project-icon">&#128203;</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub">&#128279;</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">TaskFlow</h3>
+                    <p class="project-desc">A productivity app built with Jetpack Compose featuring offline-first architecture, custom animations, and sync via Firebase. Focused on a minimal, distraction-free UI.</p>
+                    <div class="project-tech">
+                        <span>Kotlin</span><span>Compose</span><span>Room</span><span>Firebase</span><span>Hilt</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">&#9925;</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub">&#128279;</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">WeatherNow</h3>
+                    <p class="project-desc">Real-time weather app using OpenWeather API. Features dynamic backgrounds, location-aware forecasts, and Material 3 theming.</p>
+                    <div class="project-tech">
+                        <span>Kotlin</span><span>Retrofit</span><span>Material 3</span><span>Coil</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">&#127968;</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub">&#128279;</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">RentEase</h3>
+                    <p class="project-desc">Property listing app with map integration, image galleries, and filter/search. Built for a client and live on the Play Store.</p>
+                    <div class="project-tech">
+                        <span>Kotlin</span><span>Maps SDK</span><span>MVVM</span><span>REST API</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">&#127916;</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub">&#128279;</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">StreamKit</h3>
+                    <p class="project-desc">Media browsing app powered by a public movie API. Custom video player, offline watchlist, and adaptive layouts for phones &amp; tablets.</p>
+                    <div class="project-tech">
+                        <span>Kotlin</span><span>ExoPlayer</span><span>Paging 3</span><span>DataStore</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Offer -->
+    <section class="section" id="offer">
+        <div class="container">
+            <div class="section-label">What I Offer</div>
+            <h2 class="section-title">How I can help you</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <div class="offer-icon">&#128241;</div>
+                    <h3>End-to-End App Development</h3>
+                    <p>From concept to Play Store. I handle architecture, UI, backend integration, and deployment — so you get a finished, shippable product.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#127912;</div>
+                    <h3>UI / UX Implementation</h3>
+                    <p>Pixel-perfect Material Design 3 interfaces built with Jetpack Compose. Smooth animations and accessible, responsive layouts.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#128295;</div>
+                    <h3>Code Reviews &amp; Refactoring</h3>
+                    <p>Got messy legacy Android code? I'll audit, refactor, and modernise it — improving maintainability without breaking what works.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#9889;</div>
+                    <h3>Performance Optimisation</h3>
+                    <p>Profiling, reducing jank, optimising memory and battery usage. Apps should feel fast — I make that happen.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#127381;</div>
+                    <h3>API &amp; Backend Integration</h3>
+                    <p>REST APIs, Firebase, GraphQL — I connect your app to whatever powers it, with robust error handling and offline support.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#128218;</div>
+                    <h3>Consulting &amp; Architecture</h3>
+                    <p>Need advice on your Android codebase structure? I can help you pick the right patterns, libraries, and approach for your team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--dark" id="contact">
+        <div class="container">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's build something together</h2>
+            <p class="contact-sub">Have an app idea, project, or just want to talk Android? I'd love to hear from you.</p>
+            <div class="contact-grid">
+                <div class="contact-links">
+                    <a href="mailto:armaan@example.com" class="contact-card">
+                        <div class="contact-card-icon">&#128140;</div>
+                        <div>
+                            <strong>Email</strong>
+                            <span>armaan@example.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/" class="contact-card" target="_blank" rel="noopener">
+                        <div class="contact-card-icon">&#128025;</div>
+                        <div>
+                            <strong>GitHub</strong>
+                            <span>github.com/armaan</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/" class="contact-card" target="_blank" rel="noopener">
+                        <div class="contact-card-icon">&#128101;</div>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <span>linkedin.com/in/armaan</span>
+                        </div>
+                    </a>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell me about your project..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn--full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Designed &amp; Built by <strong>Armaan Mollah</strong> &nbsp;&bull;&nbsp; Android Developer</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
