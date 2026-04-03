@@ -81,36 +81,112 @@
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+                    <div class="stat-top"><span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span></div>
                     <span class="stat-label">Years Android</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <div class="stat-top"><span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span></div>
                     <span class="stat-label">Years at PayAlly</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-target="50">0</span><span class="stat-plus">k+</span>
+                    <div class="stat-top"><span class="stat-number" data-target="50">0</span><span class="stat-plus">k+</span></div>
                     <span class="stat-label">Customers Reached</span>
                 </div>
             </div>
         </div>
+        <!-- Second phone: fitness/health app UI -->
+        <div class="hero-phone hero-phone--notif">
+            <div class="phone-glow"></div>
+            <div class="phone-frame">
+                <div class="phone-screen">
+                    <div class="app-ui app-ui--alt">
+                        <!-- Status bar -->
+                        <div class="alt-status">
+                            <span class="alt-time">9:41</span>
+                            <span class="alt-icons">&#128246; &#128267;</span>
+                        </div>
+                        <!-- Greeting -->
+                        <div class="alt-greeting">
+                            <span class="alt-hello">Good morning</span>
+                            <span class="alt-user">Armaan &#128075;</span>
+                        </div>
+                        <!-- Ring progress -->
+                        <div class="alt-ring-wrap">
+                            <svg class="alt-ring" viewBox="0 0 80 80">
+                                <circle cx="40" cy="40" r="32" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="7"/>
+                                <circle cx="40" cy="40" r="32" fill="none" stroke="#3ddc84" stroke-width="7"
+                                    stroke-dasharray="168 201" stroke-dashoffset="50" stroke-linecap="round"
+                                    style="transform:rotate(-90deg);transform-origin:center"/>
+                            </svg>
+                            <div class="alt-ring-label">
+                                <span class="alt-ring-num">8,432</span>
+                                <span class="alt-ring-sub">steps</span>
+                            </div>
+                        </div>
+                        <!-- Stats row -->
+                        <div class="alt-stats-row">
+                            <div class="alt-stat">
+                                <span class="alt-stat-val">420</span>
+                                <span class="alt-stat-lbl">kcal</span>
+                            </div>
+                            <div class="alt-stat-sep"></div>
+                            <div class="alt-stat">
+                                <span class="alt-stat-val">3.2</span>
+                                <span class="alt-stat-lbl">km</span>
+                            </div>
+                            <div class="alt-stat-sep"></div>
+                            <div class="alt-stat">
+                                <span class="alt-stat-val">48</span>
+                                <span class="alt-stat-lbl">bpm</span>
+                            </div>
+                        </div>
+                        <!-- Activity bars -->
+                        <div class="alt-bars-label">Weekly Activity</div>
+                        <div class="alt-bars">
+                            <div class="alt-bar" style="--h:40%"></div>
+                            <div class="alt-bar" style="--h:65%"></div>
+                            <div class="alt-bar" style="--h:50%"></div>
+                            <div class="alt-bar" style="--h:80%"></div>
+                            <div class="alt-bar alt-bar--active" style="--h:60%"></div>
+                            <div class="alt-bar" style="--h:30%"></div>
+                            <div class="alt-bar" style="--h:55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main phone: app UI + notifications -->
         <div class="hero-phone">
+            <div class="phone-glow"></div>
             <div class="phone-frame">
                 <div class="phone-screen">
                     <div class="app-ui">
                         <div class="app-bar">
-                            <div class="app-bar-title">MyApp</div>
-                            <div class="app-bar-icon">&#9881;</div>
+                            <div class="app-bar-title">&#128276; Notifications</div>
                         </div>
-                        <div class="app-card"></div>
-                        <div class="app-card app-card--sm"></div>
-                        <div class="app-card app-card--sm"></div>
-                        <div class="app-row">
-                            <div class="app-chip">Kotlin</div>
-                            <div class="app-chip">Compose</div>
-                            <div class="app-chip">MVVM</div>
+                        <div class="notif-card notif-card--green">
+                            <div class="notif-card-icon">&#9989;</div>
+                            <div class="notif-card-text">
+                                <strong>Payment Sent</strong>
+                                <span>€2,400 · SEPA Transfer</span>
+                            </div>
+                        </div>
+                        <div class="notif-card">
+                            <div class="notif-card-icon">&#128274;</div>
+                            <div class="notif-card-text">
+                                <strong>KYC Verified</strong>
+                                <span>Identity confirmed</span>
+                            </div>
+                        </div>
+                        <div class="notif-card">
+                            <div class="notif-card-icon">&#11088;</div>
+                            <div class="notif-card-text">
+                                <strong>5-star review</strong>
+                                <span>"Best Android dev on Fiverr"</span>
+                            </div>
                         </div>
                         <div class="app-fab">+</div>
                     </div>
@@ -442,11 +518,11 @@
                             <span>github.com/armmol</span>
                         </div>
                     </a>
-                    <a href="https://linkedin.com/in/armaan-mollah" class="contact-card" target="_blank" rel="noopener">
+                    <a href="https://www.linkedin.com/in/armaan-mollah-35a3231b8/" class="contact-card" target="_blank" rel="noopener">
                         <div class="contact-card-icon">&#128101;</div>
                         <div>
                             <strong>LinkedIn</strong>
-                            <span>linkedin.com/in/armaan-mollah</span>
+                            <span>linkedin.com/in/armaan-mollah-35a3231b8</span>
                         </div>
                     </a>
                     <div class="contact-card contact-card--location">
