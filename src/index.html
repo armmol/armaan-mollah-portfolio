@@ -43,6 +43,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#offer">What I Offer</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
             <button class="nav-burger" id="burger" aria-label="Toggle menu">
@@ -58,6 +59,7 @@
         <a href="#experience" class="mobile-link">Experience</a>
         <a href="#projects" class="mobile-link">Projects</a>
         <a href="#offer" class="mobile-link">What I Offer</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
         <a href="#contact" class="mobile-link">Contact</a>
     </div>
 
@@ -498,6 +500,79 @@
                     <div class="offer-icon">&#128101;</div>
                     <h3>Team or Solo — I Deliver Either Way</h3>
                     <p>I've led engineering solo at PayAlly, collaborated in Agile teams at Accenture and Digimeglobal, and worked directly with clients on Fiverr. I adapt to what your situation demands and get the job done.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Questions I get <span class="highlight">all the time</span></h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>What's your primary Android tech stack?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Kotlin-first, always. For UI I use Jetpack Compose with Material 3. Architecture is Clean Architecture with MVVM and an MVI-inspired Store pattern for state management. Dependency injection with Hilt, async with Coroutines + StateFlow, local persistence with Room (+ SQLCipher for sensitive data), and networking with Retrofit + OkHttp.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Can you build an app from scratch on your own?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — that's exactly what I did at PayAlly Global. I was the sole Android engineer and built the entire production banking app from a blank project to Play Store, covering UI, architecture, security, backend integration, and deployment. I've also delivered end-to-end apps independently for multiple Fiverr clients.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Do you work with legacy Java Android codebases?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Absolutely. I started on Java and have led multiple Java→Kotlin migrations and XML Views→Jetpack Compose rewrites for clients. I know where the pain points are and how to modernise incrementally without breaking what's already working in production.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>How do you handle app security?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Security is something I've implemented at a fintech level — AES-256-GCM encrypted API requests, HMAC-SHA256 request signing, Android KeyStore for key storage, BiometricPrompt for authentication, runtime tamper detection, and Google Play Integrity API. For data at rest I use SQLCipher on top of Room. I treat security as a first-class requirement, not an afterthought.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Are you available for freelance or contract work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes. I'm available for freelance projects, short-term contracts, and consultancy. I've worked with international clients via Fiverr and direct contracts. I'm based in Vilnius, Lithuania and work remotely — reach out via the contact form or LinkedIn and let's talk about what you need.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>How do you approach app performance?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Performance is built in from the start, not bolted on at the end. I use Baseline Profiles to speed up app startup, Kotlin Coroutines to keep the main thread free, Paging 3 for large lists, and I regularly profile with Android Studio's tools to catch memory leaks and jank. I've shipped apps that serve 50,000+ users where performance directly impacts user trust.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Can you integrate third-party SDKs and payment systems?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — I've integrated Google Pay / Tap & Pay, SumSub KYC, ABTO VoIP SDK, Firebase (Crashlytics, FCM, Analytics), CameraX + ML Kit, and various REST APIs. If you need a specific SDK integrated cleanly into your architecture, I've likely done something similar before.</p>
+                    </div>
                 </div>
             </div>
         </div>
