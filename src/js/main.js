@@ -108,18 +108,41 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     });
 });
 
-// Contact form feedback
-document.getElementById('contactForm').addEventListener('submit', e => {
+// Contact form
+document.getElementById('contactForm').addEventListener('submit', async e => {
     e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    const original = btn.textContent;
-    btn.textContent = 'Message sent!';
-    btn.style.background = 'linear-gradient(135deg, #2ab36a, #1a8a50)';
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+
+    btn.textContent = 'Sending...';
     btn.disabled = true;
-    setTimeout(() => {
-        btn.textContent = original;
-        btn.style.background = '';
+
+    try {
+        const res = await fetch('https://formspree.io/f/mdaprzgy', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+        });
+
+        if (res.ok) {
+            btn.textContent = 'Message sent!';
+            btn.style.background = 'linear-gradient(135deg, #2ab36a, #1a8a50)';
+            form.reset();
+            setTimeout(() => {
+                btn.textContent = 'Send Message';
+                btn.style.background = '';
+                btn.disabled = false;
+            }, 3000);
+        } else {
+            throw new Error();
+        }
+    } catch {
+        btn.textContent = 'Failed — try again';
+        btn.style.background = 'linear-gradient(135deg, #e53e3e, #c53030)';
         btn.disabled = false;
-        e.target.reset();
-    }, 3000);
+        setTimeout(() => {
+            btn.textContent = 'Send Message';
+            btn.style.background = '';
+        }, 3000);
+    }
 });
