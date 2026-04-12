@@ -284,14 +284,28 @@ img { display: block; max-width: 100%; }
     z-index: 0;
 }
 
+.hero-about-wrap {
+    position: relative;
+}
+
 .hero-bg-photo {
     position: absolute;
     inset: 0;
     background: url('../armaan-bg.jpg') center top / cover no-repeat;
     opacity: 0;
     animation: bgFadeIn 2.5s ease-out 0.5s forwards;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 60%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom,
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.35) 40%,
+        rgba(0,0,0,0.2) 75%,
+        transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom,
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.35) 40%,
+        rgba(0,0,0,0.2) 75%,
+        transparent 100%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 @keyframes bgFadeIn {
@@ -749,6 +763,11 @@ img { display: block; max-width: 100%; }
 /* ============================================
    ABOUT
    ============================================ */
+#about {
+    position: relative;
+    z-index: 1;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
