@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armaan Mollah – Senior Android Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <svg class="nav-android" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <!-- Antennae -->
+                    <line x1="14" y1="11" x2="11" y2="6" stroke="#3ddc84" stroke-width="2.2" stroke-linecap="round"/>
+                    <line x1="26" y1="11" x2="29" y2="6" stroke="#3ddc84" stroke-width="2.2" stroke-linecap="round"/>
+                    <!-- Head dome -->
+                    <path d="M8 20 C8 13 32 13 32 20 L32 24 C32 26.2 30.2 28 28 28 L12 28 C9.8 28 8 26.2 8 24 Z" fill="#3ddc84"/>
+                    <!-- Eyes -->
+                    <circle cx="15" cy="20" r="2" fill="#0a1a0f"/>
+                    <circle cx="25" cy="20" r="2" fill="#0a1a0f"/>
+                    <!-- Body -->
+                    <rect x="8" y="29" width="24" height="10" rx="3.5" fill="#3ddc84"/>
+                    <!-- Arms -->
+                    <rect x="1" y="29" width="5.5" height="8" rx="2.5" fill="#3ddc84"/>
+                    <rect x="33.5" y="29" width="5.5" height="8" rx="2.5" fill="#3ddc84"/>
+                    <!-- Legs -->
+                    <rect x="11" y="38" width="5" height="5.5" rx="2.5" fill="#3ddc84"/>
+                    <rect x="24" y="38" width="5" height="5.5" rx="2.5" fill="#3ddc84"/>
+                </svg>
+                <span class="nav-logo-text">
+                    <span class="logo-first">Armaan</span><span class="logo-last"> Mollah</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#offer">What I Offer</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-burger" id="burger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#offer" class="mobile-link">What I Offer</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="hero-bg-photo"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-profile">
+                <img src="armaan-dp.jpg" alt="Armaan Mollah" class="hero-dp">
+            </div>
+            <div class="hero-badge">
+                <span class="android-icon">&#xe800;</span>
+                Senior Android Developer &nbsp;·&nbsp; Vilnius, Lithuania
+            </div>
+            <h1 class="hero-name">Armaan Mollah</h1>
+            <p class="hero-tagline">7 years building Android apps — from award-winning university projects to production fintech platforms trusted by 50,000+ customers</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-top"><span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span></div>
+                    <span class="stat-label">Years Android</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-top"><span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span></div>
+                    <span class="stat-label">Years at PayAlly</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-top"><span class="stat-number" data-target="50">0</span><span class="stat-plus">k+</span></div>
+                    <span class="stat-label">Customers Reached</span>
+                </div>
+            </div>
+        </div>
+        <!-- Second phone: fitness/health app UI -->
+        <div class="hero-phone hero-phone--notif">
+            <div class="phone-glow"></div>
+            <div class="phone-frame">
+                <div class="phone-screen">
+                    <div class="app-ui app-ui--alt">
+                        <!-- Status bar -->
+                        <div class="alt-status">
+                            <span class="alt-time">9:41</span>
+                            <span class="alt-icons">&#128246; &#128267;</span>
+                        </div>
+                        <!-- Greeting -->
+                        <div class="alt-greeting">
+                            <span class="alt-hello">Good morning</span>
+                            <span class="alt-user">Armaan &#128075;</span>
+                        </div>
+                        <!-- Ring progress -->
+                        <div class="alt-ring-wrap">
+                            <svg class="alt-ring" viewBox="0 0 80 80">
+                                <circle cx="40" cy="40" r="32" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="7"/>
+                                <circle cx="40" cy="40" r="32" fill="none" stroke="#3ddc84" stroke-width="7"
+                                    stroke-dasharray="168 201" stroke-dashoffset="50" stroke-linecap="round"
+                                    style="transform:rotate(-90deg);transform-origin:center"/>
+                            </svg>
+                            <div class="alt-ring-label">
+                                <span class="alt-ring-num">8,432</span>
+                                <span class="alt-ring-sub">steps</span>
+                            </div>
+                        </div>
+                        <!-- Stats row -->
+                        <div class="alt-stats-row">
+                            <div class="alt-stat">
+                                <span class="alt-stat-val">420</span>
+                                <span class="alt-stat-lbl">kcal</span>
+                            </div>
+                            <div class="alt-stat-sep"></div>
+                            <div class="alt-stat">
+                                <span class="alt-stat-val">3.2</span>
+                                <span class="alt-stat-lbl">km</span>
+                            </div>
+                            <div class="alt-stat-sep"></div>
+                            <div class="alt-stat">
+                                <span class="alt-stat-val">48</span>
+                                <span class="alt-stat-lbl">bpm</span>
+                            </div>
+                        </div>
+                        <!-- Activity bars -->
+                        <div class="alt-bars-label">Weekly Activity</div>
+                        <div class="alt-bars">
+                            <div class="alt-bar" style="--h:40%"></div>
+                            <div class="alt-bar" style="--h:65%"></div>
+                            <div class="alt-bar" style="--h:50%"></div>
+                            <div class="alt-bar" style="--h:80%"></div>
+                            <div class="alt-bar alt-bar--active" style="--h:60%"></div>
+                            <div class="alt-bar" style="--h:30%"></div>
+                            <div class="alt-bar" style="--h:55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main phone: app UI + notifications -->
+        <div class="hero-phone">
+            <div class="phone-glow"></div>
+            <div class="phone-frame">
+                <div class="phone-screen">
+                    <div class="app-ui">
+                        <div class="app-bar">
+                            <div class="app-bar-title">&#128276; Notifications</div>
+                        </div>
+                        <div class="notif-card notif-card--green">
+                            <div class="notif-card-icon">&#9989;</div>
+                            <div class="notif-card-text">
+                                <strong>Payment Sent</strong>
+                                <span>€2,400 · SEPA Transfer</span>
+                            </div>
+                        </div>
+                        <div class="notif-card">
+                            <div class="notif-card-icon">&#128274;</div>
+                            <div class="notif-card-text">
+                                <strong>KYC Verified</strong>
+                                <span>Identity confirmed</span>
+                            </div>
+                        </div>
+                        <div class="notif-card">
+                            <div class="notif-card-icon">&#11088;</div>
+                            <div class="notif-card-text">
+                                <strong>5-star review</strong>
+                                <span>"Best Android dev on Fiverr"</span>
+                            </div>
+                        </div>
+                        <div class="app-fab">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-label">About Me</div>
+            <h2 class="section-title">The Android engineer who <span class="highlight">ships and delivers</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm Armaan — a Senior Android Developer and Independent Consultant based in Vilnius, Lithuania. Over 7 years I've grown from writing my first lines of Java to architecting a production fintech platform that 50,000+ real customers rely on every day. I've lived through the full evolution of Android: Java → Kotlin, XML Views → Jetpack Compose, RxJava/LiveData → Coroutines/StateFlow.</p>
+                    <p>At PayAlly Global I'm the sole Android engineer — I designed, built, and shipped a full EMI banking app from a blank canvas. Payment cards, multi-currency accounts, SEPA transfers, KYC, real-time messaging, SIP VoIP, Google Pay — all secured with AES-256-GCM, HMAC-SHA256, Android KeyStore, and Google Play Integrity API. That's what I deliver when trusted to own a product end-to-end.</p>
+                    <p>Alongside PayAlly, I work as an Independent Android Consultant for international clients — advising on architecture, delivering production apps, and solving complex Android problems. I've also worked within engineering teams at Digimeglobal and Accenture. Whether leading solo or embedded in your team, I adapt and perform.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="about-card-icon">&#128274;</div>
+                        <div class="about-card-text">
+                            <strong>Fintech &amp; Security</strong>
+                            <span>AES-256, HMAC, KeyStore, Biometric, Play Integrity</span>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">&#127775;</div>
+                        <div class="about-card-text">
+                            <strong>Solo or Team — Equally Strong</strong>
+                            <span>Led solo at PayAlly, collaborated at Digimeglobal &amp; Accenture</span>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">&#127942;</div>
+                        <div class="about-card-text">
+                            <strong>Award-winning</strong>
+                            <span>Best project at KTU (10/10) &amp; Accenture Bootcamp</span>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">&#128101;</div>
+                        <div class="about-card-text">
+                            <strong>50,000+ Users</strong>
+                            <span>Real customers across PayAlly &amp; consulting engagements</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--dark" id="skills">
+        <div class="container">
+            <div class="section-label">Technical Skills</div>
+            <h2 class="section-title">What I work with</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Languages &amp; UI</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Kotlin</span><span>95%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Jetpack Compose + Material 3</span><span>92%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Java</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Architecture &amp; Jetpack</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Clean Arch / MVVM / MVI Store</span><span>93%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Coroutines + StateFlow</span><span>92%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Room + SQLCipher</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Security &amp; Fintech</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>AES-256-GCM / HMAC-SHA256</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Android KeyStore + BiometricPrompt</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Google Play Integrity API</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Integrations &amp; Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Retrofit + OkHttp</span><span>92%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Hilt DI</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Firebase (Crashlytics, FCM, Analytics)</span><span>88%</span></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">Compose Destinations</span>
+                <span class="tag">WorkManager</span>
+                <span class="tag">CameraX + ML Kit</span>
+                <span class="tag">Google Pay / Tap &amp; Pay</span>
+                <span class="tag">SumSub KYC</span>
+                <span class="tag">ABTO VoIP SDK</span>
+                <span class="tag">Baseline Profiles</span>
+                <span class="tag">Gradle Version Catalogs</span>
+                <span class="tag">KSP</span>
+                <span class="tag">RxJava</span>
+                <span class="tag">LiveData</span>
+                <span class="tag">DataStore</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Git / GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-label">Experience</div>
+            <h2 class="section-title">My journey so far</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Feb 2023 – Present</span>
+                            <span class="timeline-badge">Current</span>
+                        </div>
+                        <h3 class="timeline-role">Senior Android Developer</h3>
+                        <p class="timeline-company">PayAlly Global &nbsp;·&nbsp; Vilnius, Lithuania</p>
+                        <p class="timeline-desc">Sole Android engineer — built a production fintech/EMI banking app from scratch. The app covers payment cards, multi-currency accounts, SEPA transfers, KYC onboarding, real-time messaging, and SIP-based VoIP calling. Implemented enterprise-grade security: AES-256-GCM encrypted API requests, HMAC-SHA256 signing, Android KeyStore, BiometricPrompt, runtime tamper detection, and Google Play Integrity API. Managed 83 Room + SQLCipher migrations without data loss.</p>
+                        <div class="timeline-tags">
+                            <span>Kotlin</span><span>Jetpack Compose</span><span>Clean Arch</span><span>Hilt</span><span>Room + SQLCipher</span><span>StateFlow</span><span>Google Pay</span><span>SumSub KYC</span><span>ABTO VoIP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">May 2019 – Present</span>
+                        </div>
+                        <h3 class="timeline-role">Independent Android Consultant</h3>
+                        <p class="timeline-company">Self-employed &nbsp;·&nbsp; International clients</p>
+                        <p class="timeline-desc">Consulting independently for international clients — advising on architecture, delivering production apps, and solving complex Android challenges. Projects include a crypto price display app (RxJava), a nutrition tracking app (Room, LiveData), and a health &amp; medical records app with encrypted storage. Also led Java→Kotlin and XML→Jetpack Compose migrations. Combined reach: 50,000+ users.</p>
+                        <div class="timeline-tags">
+                            <span>Kotlin</span><span>Java</span><span>RxJava</span><span>Room</span><span>MVVM</span><span>Retrofit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Nov 2022 – Dec 2022</span>
+                            <span class="timeline-badge">&#127942; Best Project</span>
+                        </div>
+                        <h3 class="timeline-role">Java Bootcamp — Best Project Award</h3>
+                        <p class="timeline-company">Accenture</p>
+                        <p class="timeline-desc">Intensive Java bootcamp culminating in Event Buddy — a full-stack social event application. Awarded best project dissertation. Built with Java 17, Spring Boot 3, Spring MVC, Spring Data JPA, JUnit 5, Thymeleaf, and Bootstrap in an Agile team workflow.</p>
+                        <div class="timeline-tags">
+                            <span>Java 17</span><span>Spring Boot 3</span><span>Spring MVC</span><span>JUnit 5</span><span>Agile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Apr 2021 – Jul 2021</span>
+                        </div>
+                        <h3 class="timeline-role">Android Developer Intern</h3>
+                        <p class="timeline-company">Digimeglobal</p>
+                        <p class="timeline-desc">First professional Android role. Contributed to feature development, bug fixes, and learned production-grade workflows in a professional team environment.</p>
+                        <div class="timeline-tags">
+                            <span>Java</span><span>Android SDK</span><span>Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">2017 – 2022</span>
+                            <span class="timeline-badge">&#127942; Grade 10/10</span>
+                        </div>
+                        <h3 class="timeline-role">Bachelor's in Informatics, Information Technology</h3>
+                        <p class="timeline-company">Kaunas University of Technology &nbsp;·&nbsp; Grade 8.4/10</p>
+                        <p class="timeline-desc">Best Final Bachelor Project in the Informatics department (grade 10/10) — LaundryWala, an Android laundry marketplace with live delivery tracking, multi-role Firebase Auth, Cloud Firestore, Google Maps SDK, Places API, and MVVM. Recommended by the university to pitch at Technorama 2022. Also served as Vice President and Social Inclusion Co-ordinator at Erasmus Student Network Lithuania.</p>
+                        <div class="timeline-tags">
+                            <span>Java</span><span>Firebase</span><span>Google Maps SDK</span><span>MVVM</span><span>Firestore</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--dark" id="projects">
+        <div class="container">
+            <div class="section-label">Projects</div>
+            <h2 class="section-title">Things I've built</h2>
+            <div class="projects-grid">
+                <div class="project-card project-card--featured">
+                    <div class="project-header">
+                        <div class="project-icon">&#128179;</div>
+                        <div class="project-links"></div>
+                    </div>
+                    <h3 class="project-title">PayAlly — Fintech Banking App</h3>
+                    <p class="project-desc">Production EMI banking app built from scratch as the sole Android engineer. Covers payment cards, multi-currency accounts, SEPA transfers, KYC (SumSub), real-time messaging, SIP VoIP calling, and Google Pay integration. Enterprise security: AES-256-GCM, HMAC-SHA256, Android KeyStore, BiometricPrompt, Play Integrity API, and runtime tamper detection. 83 Room + SQLCipher migrations managed without data loss.</p>
+                    <div class="project-tech">
+                        <span>Kotlin</span><span>Jetpack Compose</span><span>Material 3</span><span>Clean Arch</span><span>Hilt</span><span>Room + SQLCipher</span><span>StateFlow</span><span>Google Pay</span><span>CameraX + ML Kit</span><span>Baseline Profiles</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">&#128681;</div>
+                        <div class="project-links"></div>
+                    </div>
+                    <h3 class="project-title">LaundryWala</h3>
+                    <p class="project-desc">Android laundry marketplace with live delivery tracking, multi-role authentication, and real-time order management. Best Final Bachelor Project at KTU (grade 10/10). Recommended to pitch at Technorama 2022.</p>
+                    <div class="project-tech">
+                        <span>Java</span><span>Firebase Auth</span><span>Cloud Firestore</span><span>Google Maps SDK</span><span>Places API</span><span>MVVM</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">&#129689;</div>
+                        <div class="project-links"></div>
+                    </div>
+                    <h3 class="project-title">Crypto Price Tracker</h3>
+                    <p class="project-desc">Freelance project — real-time cryptocurrency price display app with live market data feeds, portfolio tracking, and reactive UI updates.</p>
+                    <div class="project-tech">
+                        <span>Kotlin</span><span>RxJava</span><span>Retrofit</span><span>MVVM</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">&#127966;</div>
+                        <div class="project-links"></div>
+                    </div>
+                    <h3 class="project-title">Event Buddy</h3>
+                    <p class="project-desc">Full-stack social event app built at the Accenture Java Bootcamp. Won best project dissertation award. Users can create, discover, and join local events with a clean web interface.</p>
+                    <div class="project-tech">
+                        <span>Java 17</span><span>Spring Boot 3</span><span>Spring Data JPA</span><span>Thymeleaf</span><span>JUnit 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Offer -->
+    <section class="section" id="offer">
+        <div class="container">
+            <div class="section-label">What I Offer</div>
+            <h2 class="section-title">How I can help you</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <div class="offer-icon">&#128241;</div>
+                    <h3>End-to-End App Development</h3>
+                    <p>I've built a full production banking app solo and delivered numerous consulting projects for international clients. You get a complete, production-ready app — not a prototype handed off mid-way.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#128274;</div>
+                    <h3>Fintech &amp; Security Engineering</h3>
+                    <p>AES-256-GCM, HMAC signing, Android KeyStore, BiometricPrompt, Play Integrity API, runtime tamper detection. I build apps that handle sensitive financial data the right way.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#127912;</div>
+                    <h3>Jetpack Compose UI</h3>
+                    <p>Pixel-perfect Material 3 interfaces with smooth animations, adaptive layouts, and accessible components — built the modern way. No XML, no compromise.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#128295;</div>
+                    <h3>Legacy Modernisation</h3>
+                    <p>Java→Kotlin migrations, XML Views→Jetpack Compose rewrites, RxJava→Coroutines/StateFlow upgrades. Done for multiple consulting clients and in-house — without breaking production.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#127381;</div>
+                    <h3>Complex Integrations</h3>
+                    <p>Google Pay, KYC (SumSub), VoIP (SIP/ABTO), Firebase, REST APIs, CameraX + ML Kit. I've integrated all of these in live, customer-facing apps.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">&#128101;</div>
+                    <h3>Team or Solo — I Deliver Either Way</h3>
+                    <p>I've led engineering solo at PayAlly, collaborated in Agile teams at Accenture and Digimeglobal, and consulted independently for international clients. I adapt to what your situation demands and get the job done.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Questions I get <span class="highlight">all the time</span></h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>What's your primary Android tech stack?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Kotlin-first, always. For UI I use Jetpack Compose with Material 3. Architecture is Clean Architecture with MVVM and an MVI-inspired Store pattern for state management. Dependency injection with Hilt, async with Coroutines + StateFlow, local persistence with Room (+ SQLCipher for sensitive data), and networking with Retrofit + OkHttp.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Can you build an app from scratch on your own?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — that's exactly what I did at PayAlly Global. I was the sole Android engineer and built the entire production banking app from a blank project to Play Store, covering UI, architecture, security, backend integration, and deployment. I've also delivered end-to-end apps independently for multiple consulting clients.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Do you work with legacy Java Android codebases?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Absolutely. I started on Java and have led multiple Java→Kotlin migrations and XML Views→Jetpack Compose rewrites for clients. I know where the pain points are and how to modernise incrementally without breaking what's already working in production.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>How do you handle app security?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Security is something I've implemented at a fintech level — AES-256-GCM encrypted API requests, HMAC-SHA256 request signing, Android KeyStore for key storage, BiometricPrompt for authentication, runtime tamper detection, and Google Play Integrity API. For data at rest I use SQLCipher on top of Room. I treat security as a first-class requirement, not an afterthought.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Are you available for consulting or contract work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes. I'm available for consulting engagements, short-term contracts, and advisory work. I work with international clients directly and remotely. I'm based in Vilnius, Lithuania — reach out via the contact form or LinkedIn and let's talk about what you need.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>How do you approach app performance?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Performance is built in from the start, not bolted on at the end. I use Baseline Profiles to speed up app startup, Kotlin Coroutines to keep the main thread free, Paging 3 for large lists, and I regularly profile with Android Studio's tools to catch memory leaks and jank. I've shipped apps that serve 50,000+ users where performance directly impacts user trust.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Can you integrate third-party SDKs and payment systems?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — I've integrated Google Pay / Tap & Pay, SumSub KYC, ABTO VoIP SDK, Firebase (Crashlytics, FCM, Analytics), CameraX + ML Kit, and various REST APIs. If you need a specific SDK integrated cleanly into your architecture, I've likely done something similar before.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--dark" id="contact">
+        <div class="container">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's build something together</h2>
+            <p class="contact-sub">Building a fintech app? Need a senior Android engineer? Just want to talk Kotlin? I'm open to new opportunities.</p>
+            <div class="contact-grid">
+                <div class="contact-links">
+                    <a href="https://github.com/armmol" class="contact-card" target="_blank" rel="noopener">
+                        <div class="contact-card-icon">&#128025;</div>
+                        <div>
+                            <strong>GitHub</strong>
+                            <span>github.com/armmol</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/armaan-mollah" class="contact-card" target="_blank" rel="noopener">
+                        <div class="contact-card-icon">&#128101;</div>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <span>linkedin.com/in/armaan-mollah</span>
+                        </div>
+                    </a>
+                    <div class="contact-card contact-card--location">
+                        <div class="contact-card-icon">&#127759;</div>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Vilnius, Lithuania &nbsp;·&nbsp; Open to remote</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell me about your project..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn--full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Designed &amp; Built by <strong>Armaan Mollah</strong> &nbsp;&bull;&nbsp; Senior Android Developer &nbsp;&bull;&nbsp; Vilnius, Lithuania</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

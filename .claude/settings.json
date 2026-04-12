@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r src docs)",
+      "Bash(git rm:*)"
+    ]
+  }
+}
