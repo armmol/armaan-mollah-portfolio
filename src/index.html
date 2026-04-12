@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armaan Mollah – Senior Android Developer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 50'%3E%3Crect width='40' height='50' rx='8' fill='%230f0f13'/%3E%3Cline x1='13' y1='12' x2='10' y2='6' stroke='%233ddc84' stroke-width='2.5' stroke-linecap='round'/%3E%3Cline x1='27' y1='12' x2='30' y2='6' stroke='%233ddc84' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='M5 22 C5 14 35 14 35 22 L35 27 C35 30 32 32 29 32 L11 32 C8 32 5 30 5 27 Z' fill='%233ddc84'/%3E%3Ccircle cx='13.5' cy='22' r='2.2' fill='%230a1a0f'/%3E%3Ccircle cx='26.5' cy='22' r='2.2' fill='%230a1a0f'/%3E%3Crect x='5' y='33' width='30' height='11' rx='3.5' fill='%233ddc84'/%3E%3Crect x='0' y='33' width='4' height='8' rx='2' fill='%233ddc84'/%3E%3Crect x='36' y='33' width='4' height='8' rx='2' fill='%233ddc84'/%3E%3Crect x='9' y='43' width='5' height='6' rx='2.5' fill='%233ddc84'/%3E%3Crect x='26' y='43' width='5' height='6' rx='2.5' fill='%233ddc84'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,11 +74,24 @@
         </div>
         <div class="hero-content">
             <div class="hero-profile">
-                <img src="armaan-dp.jpg" alt="Armaan Mollah" class="hero-dp">
-            </div>
-            <div class="hero-badge">
-                <span class="android-icon">&#xe800;</span>
-                Senior Android Developer &nbsp;·&nbsp; Vilnius, Lithuania
+                <div class="hero-dp-wrap">
+                    <img src="armaan-dp.jpg" alt="Armaan Mollah" class="hero-dp">
+                </div>
+                <div class="hero-badge">
+                    <svg class="badge-android" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <line x1="11" y1="8" x2="8" y2="4" stroke="#3ddc84" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="21" y1="8" x2="24" y2="4" stroke="#3ddc84" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M5 17 C5 10 27 10 27 17 L27 21 C27 23.2 25.2 25 23 25 L9 25 C6.8 25 5 23.2 5 21 Z" fill="#3ddc84"/>
+                        <circle cx="11.5" cy="17" r="1.8" fill="#0f0f13"/>
+                        <circle cx="20.5" cy="17" r="1.8" fill="#0f0f13"/>
+                        <rect x="4" y="26" width="24" height="9" rx="3.5" fill="#3ddc84"/>
+                        <rect x="-1" y="26" width="4.5" height="7" rx="2" fill="#3ddc84"/>
+                        <rect x="28.5" y="26" width="4.5" height="7" rx="2" fill="#3ddc84"/>
+                        <rect x="8" y="34" width="4.5" height="5" rx="2" fill="#3ddc84"/>
+                        <rect x="19.5" y="34" width="4.5" height="5" rx="2" fill="#3ddc84"/>
+                    </svg>
+                    Senior Android Developer &nbsp;·&nbsp; Vilnius, Lithuania
+                </div>
             </div>
             <h1 class="hero-name">Armaan Mollah</h1>
             <p class="hero-tagline">7 years building Android apps — from award-winning university projects to production fintech platforms trusted by 50,000+ customers</p>
@@ -210,7 +224,7 @@
                 <div class="about-text">
                     <p>I'm Armaan — a Senior Android Developer and Independent Consultant based in Vilnius, Lithuania. Over 7 years I've grown from writing my first lines of Java to architecting a production fintech platform that 50,000+ real customers rely on every day. I've lived through the full evolution of Android: Java → Kotlin, XML Views → Jetpack Compose, RxJava/LiveData → Coroutines/StateFlow.</p>
                     <p>At PayAlly Global I'm the sole Android engineer — I designed, built, and shipped a full EMI banking app from a blank canvas. Payment cards, multi-currency accounts, SEPA transfers, KYC, real-time messaging, SIP VoIP, Google Pay — all secured with AES-256-GCM, HMAC-SHA256, Android KeyStore, and Google Play Integrity API. That's what I deliver when trusted to own a product end-to-end.</p>
-                    <p>Alongside PayAlly, I work as an Independent Android Consultant for international clients — advising on architecture, delivering production apps, and solving complex Android problems. I've also worked within engineering teams at Digimeglobal and Accenture. Whether leading solo or embedded in your team, I adapt and perform.</p>
+                    <p>Alongside PayAlly, I work as an Independent Consultant — Android Developer for international clients — advising on architecture, delivering production apps, and solving complex Android problems. I've also worked within engineering teams at Digimeglobal and Accenture. Whether leading solo or embedded in your team, I adapt and perform.</p>
                 </div>
                 <div class="about-cards">
                     <div class="about-card">
@@ -359,7 +373,7 @@
                         <div class="timeline-meta">
                             <span class="timeline-date">May 2019 – Present</span>
                         </div>
-                        <h3 class="timeline-role">Independent Android Consultant</h3>
+                        <h3 class="timeline-role">Independent Consultant — Android Developer</h3>
                         <p class="timeline-company">Self-employed &nbsp;·&nbsp; International clients</p>
                         <p class="timeline-desc">Consulting independently for international clients — advising on architecture, delivering production apps, and solving complex Android challenges. Projects include a crypto price display app (RxJava), a nutrition tracking app (Room, LiveData), and a health &amp; medical records app with encrypted storage. Also led Java→Kotlin and XML→Jetpack Compose migrations. Combined reach: 50,000+ users.</p>
                         <div class="timeline-tags">
@@ -434,7 +448,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">&#128681;</div>
+                        <div class="project-icon"><img src="laundrywala-logo.png" alt="LaundryWala" class="project-logo"></div>
                         <div class="project-links"></div>
                     </div>
                     <h3 class="project-title">LaundryWala</h3>
@@ -591,21 +605,38 @@
             <div class="contact-grid">
                 <div class="contact-links">
                     <a href="https://github.com/armmol" class="contact-card" target="_blank" rel="noopener">
-                        <div class="contact-card-icon">&#128025;</div>
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="#e8e8f0" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </div>
                         <div>
                             <strong>GitHub</strong>
                             <span>github.com/armmol</span>
                         </div>
                     </a>
                     <a href="https://www.linkedin.com/in/armaan-mollah" class="contact-card" target="_blank" rel="noopener">
-                        <div class="contact-card-icon">&#128101;</div>
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </div>
                         <div>
                             <strong>LinkedIn</strong>
                             <span>linkedin.com/in/armaan-mollah</span>
                         </div>
                     </a>
                     <div class="contact-card contact-card--location">
-                        <div class="contact-card-icon">&#127759;</div>
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 32 40" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="11" y1="8" x2="8" y2="3" stroke="#3ddc84" stroke-width="2.2" stroke-linecap="round"/>
+                                <line x1="21" y1="8" x2="24" y2="3" stroke="#3ddc84" stroke-width="2.2" stroke-linecap="round"/>
+                                <path d="M4 18 C4 10 28 10 28 18 L28 23 C28 25.2 26.2 27 24 27 L8 27 C5.8 27 4 25.2 4 23 Z" fill="#3ddc84"/>
+                                <circle cx="11" cy="18" r="2" fill="#0a1a0f"/>
+                                <circle cx="21" cy="18" r="2" fill="#0a1a0f"/>
+                                <rect x="4" y="28" width="24" height="9" rx="3" fill="#3ddc84"/>
+                                <rect x="-1" y="28" width="4.5" height="7" rx="2" fill="#3ddc84"/>
+                                <rect x="28.5" y="28" width="4.5" height="7" rx="2" fill="#3ddc84"/>
+                                <rect x="8" y="36" width="4" height="5" rx="2" fill="#3ddc84"/>
+                                <rect x="20" y="36" width="4" height="5" rx="2" fill="#3ddc84"/>
+                            </svg>
+                        </div>
                         <div>
                             <strong>Location</strong>
                             <span>Vilnius, Lithuania &nbsp;·&nbsp; Open to remote</span>

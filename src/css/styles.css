@@ -287,11 +287,11 @@ img { display: block; max-width: 100%; }
 .hero-bg-photo {
     position: absolute;
     inset: 0;
-    background: url('armaan-bg.jpg') center center / cover no-repeat;
+    background: url('../armaan-bg.jpg') center top / cover no-repeat;
     opacity: 0;
-    animation: bgFadeIn 2s ease-out 0.5s forwards;
-    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 30%, rgba(0,0,0,0.18) 70%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 30%, rgba(0,0,0,0.18) 70%, transparent 100%);
+    animation: bgFadeIn 2.5s ease-out 0.5s forwards;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 60%, transparent 100%);
 }
 
 @keyframes bgFadeIn {
@@ -304,14 +304,34 @@ img { display: block; max-width: 100%; }
     animation: fadeInDown 0.8s ease-out;
 }
 
-.hero-dp {
-    width: 80px;
-    height: 80px;
+.hero-dp-wrap {
+    position: relative;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
+    flex-shrink: 0;
+    border: 2.5px solid rgba(61, 220, 132, 0.7);
+    box-shadow: 0 0 0 5px rgba(61, 220, 132, 0.1), 0 0 28px rgba(61, 220, 132, 0.3);
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.hero-dp-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: inset 0 0 18px 10px var(--bg);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-dp {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center top;
-    border: 2px solid rgba(61, 220, 132, 0.5);
-    box-shadow: 0 0 20px rgba(61, 220, 132, 0.25);
+    object-position: center 8%;
+    display: block;
 }
 
 .blob {
@@ -368,6 +388,13 @@ img { display: block; max-width: 100%; }
     color: var(--green);
     margin-bottom: 24px;
     animation: fadeInDown 0.8s ease-out;
+}
+
+.badge-android {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    display: block;
 }
 
 .android-icon {
@@ -1000,7 +1027,8 @@ img { display: block; max-width: 100%; }
     align-items: flex-start;
 }
 
-.project-icon { font-size: 32px; }
+.project-icon { font-size: 32px; display: flex; align-items: center; }
+.project-logo { width: 36px; height: 36px; border-radius: 8px; object-fit: cover; }
 
 .project-links { display: flex; gap: 12px; }
 
