@@ -284,6 +284,36 @@ img { display: block; max-width: 100%; }
     z-index: 0;
 }
 
+.hero-bg-photo {
+    position: absolute;
+    inset: 0;
+    background: url('armaan-bg.jpg') center center / cover no-repeat;
+    opacity: 0;
+    animation: bgFadeIn 2s ease-out 0.5s forwards;
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 30%, rgba(0,0,0,0.18) 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 30%, rgba(0,0,0,0.18) 70%, transparent 100%);
+}
+
+@keyframes bgFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.hero-profile {
+    margin-bottom: 20px;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.hero-dp {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 2px solid rgba(61, 220, 132, 0.5);
+    box-shadow: 0 0 20px rgba(61, 220, 132, 0.25);
+}
+
 .blob {
     position: absolute;
     border-radius: 50%;
