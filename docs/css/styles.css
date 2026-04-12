@@ -287,7 +287,7 @@ img { display: block; max-width: 100%; }
 .hero-bg-photo {
     position: absolute;
     inset: 0;
-    background: url('../armaan-bg.jpg') center center / cover no-repeat;
+    background: url('../armaan-bg.jpg') center top / cover no-repeat;
     opacity: 0;
     animation: bgFadeIn 2.5s ease-out 0.5s forwards;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 60%, transparent 100%);
@@ -1002,7 +1002,8 @@ img { display: block; max-width: 100%; }
     align-items: flex-start;
 }
 
-.project-icon { font-size: 32px; }
+.project-icon { font-size: 32px; display: flex; align-items: center; }
+.project-logo { width: 36px; height: 36px; border-radius: 8px; object-fit: cover; }
 
 .project-links { display: flex; gap: 12px; }
 
