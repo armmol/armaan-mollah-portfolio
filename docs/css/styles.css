@@ -287,11 +287,11 @@ img { display: block; max-width: 100%; }
 .hero-bg-photo {
     position: absolute;
     inset: 0;
-    background: url('armaan-bg.jpg') center center / cover no-repeat;
+    background: url('../armaan-bg.jpg') center center / cover no-repeat;
     opacity: 0;
-    animation: bgFadeIn 2s ease-out 0.5s forwards;
-    mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 30%, rgba(0,0,0,0.18) 70%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.18) 30%, rgba(0,0,0,0.18) 70%, transparent 100%);
+    animation: bgFadeIn 2.5s ease-out 0.5s forwards;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 60%, transparent 100%);
 }
 
 @keyframes bgFadeIn {
@@ -305,8 +305,8 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-dp {
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 15%;
