@@ -309,7 +309,7 @@ img { display: block; max-width: 100%; }
     height: 96px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center top;
     border: 2px solid rgba(61, 220, 132, 0.6);
     box-shadow: 0 0 0 4px rgba(61, 220, 132, 0.1), 0 0 20px rgba(61, 220, 132, 0.25);
     display: block;
